@@ -1,0 +1,13 @@
+<!-- Only show registrations for today, or if filtering, disable update for old entries -->
+{% for reg in registrations %}
+  <tr>
+    <td>{{ reg.guest_name }}</td>
+    <td>{{ reg.company }}</td>
+    ...
+    {% if reg.visit_date == today %}
+      <td><a href="{{ url_for('update_guest', reg_id=reg.id) }}">Update</a></td>
+    {% else %}
+      <td><span style="color:gray">Locked</span></td>
+    {% endif %}
+  </tr>
+{% endfor %}
