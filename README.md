@@ -1,2 +1,2 @@
-# IT-Guest-Registration
-Guest Registration to IT Facilities Access
+# Guest-Registration
+Guest Registration to Facilities Access
